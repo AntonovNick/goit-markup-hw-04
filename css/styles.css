@@ -146,6 +146,14 @@ img {
   padding-top: 188px;
   padding-bottom: 188px;
   text-align: center;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 .hero-text {
   font-weight: 700;
@@ -277,6 +285,57 @@ img {
 .project-cards-section {
   padding-top: 96px;
   padding-bottom: 120px;
+}
+
+.fifth-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.fifth-section-name {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--navy-blue);
+  margin-bottom: 72px;
+}
+
+.fifth-section-list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+}
+
+.fifth-section-list-item {
+  flex-basis: calc((100% - 120px) / 6);
+}
+
+.fifth-section-link {
+  display: flex;
+  border: 1px solid var(--light-slate);
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  height: 88px;
+}
+
+.fifth-section-link:hover,
+.fifth-section-link:focus {
+  border: 1px solid var(--ocean);
+}
+
+.fifth-section-link:hover .fifth-section-list-item-img,
+.fifth-section-link:focus .fifth-section-list-item-img {
+  fill: var(--ocean);
+}
+
+.fifth-section-list-item-img {
+  fill: var(--light-slate);
 }
 
 .filters {
