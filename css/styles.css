@@ -63,6 +63,8 @@ img {
   border-bottom: 1px solid var(--cornflower);
   padding-top: 24px;
   padding-bottom: 24px;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-navigation {
   display: flex;
@@ -178,6 +180,7 @@ img {
   margin-top: 48px;
   padding: 16px 32px 16px 32px;
   border: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .order-btn:hover,
@@ -200,6 +203,19 @@ img {
 
 .features-list-item {
   flex-basis: calc((100% - 72px) / 4);
+}
+
+.second-section-container {
+  background: var(--cloud);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 264px;
+  height: 112px;
+}
+
+.second-section-img {
 }
 
 .second-section-item-name {
@@ -256,10 +272,15 @@ img {
   margin-bottom: 72px;
 }
 
+.team-cards-list {
+}
+
 .fourth-section-list-item {
   background-color: var(--white);
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 32px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .fourth-section-list-item-name {
@@ -275,6 +296,33 @@ img {
 .fourth-section-item-paragraph {
   text-align: center;
   margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.our-team-list {
+  display: flex;
+  gap: 24px;
+  margin-left: 16px;
+}
+
+.our-team-list-item {
+  width: 40px;
+  height: 40px;
+}
+
+.our-team-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--iris);
+}
+
+.our-team-link:hover,
+.our-team-link:focus {
+  background-color: var(--ocean);
 }
 
 .team-cards-list {
@@ -369,6 +417,7 @@ img {
   background: var(--ocean);
   border: 1px solid var(--ocean);
   border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .project-cards-list {
@@ -377,6 +426,12 @@ img {
   column-gap: 24px;
   row-gap: 48px;
   flex-basis: calc((100% - 48px) / 3);
+}
+
+.project-cards-list-item:hover,
+.project-cards-list-item:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .cards-content {
@@ -400,6 +455,10 @@ img {
   padding-bottom: 100px;
 }
 
+.footer-container {
+  display: flex;
+}
+
 .footer-logo-web {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -421,6 +480,49 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--cloud);
+  margin-top: 17.5px;
+}
+
+.social-media-container {
+  margin-left: 120px;
+}
+
+.social-media {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.social-media-list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.social-media-list-item {
+  width: 40px;
+  height: 40px;
+}
+
+.social-media-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media-link:hover,
+.social-media-link:focus {
+  background-color: var(--green);
+}
+
+.social-media-img {
 }
 
 .team-cards {
